@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --main-color: #3a6cf4;
+  --white-color: #f0f0f0;
+  --hover-color: #601cfc;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  height: 5000px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* section {
+  padding: 100px 0;
+} */
+/* Start Header  */
+header {
+  width: 100%;
+  background-color: var(--white-color);
+  position: fixed;
+  padding-top: 10px;
+  /* NEW */
+  padding-bottom: 10px;
+  z-index: 999;
+}
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-content .header-title {
+  color: var(--main-color);
+  text-transform: uppercase;
+  /* 1em = 16px default */
+  font-weight: 700;
+  font-size: 1.8em;
+
+  /* border: 4px solid var(--main-color);
+  padding: 5px;
+  border-radius: 30px; */
+}
+header .header-content .navigation {
+  display: flex;
+}
+header .header-content .navigation a {
+  padding-right: 30px;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 1.2em;
+}
+header .header-content .navigation a:hover {
+  color: var(--hover-color);
+}
+/* End Header  */
+/* Start HomePage  */
+
+.homepage {
+  min-height: calc(100vh - 0px);
+  width: 100%;
+  background-color: #000113;
+  color: #fff;
+  background: url(https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* New  */
+  background-attachment: fixed;
+}
+.homepage .homepage-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.homepage .homepage-content .homepage-info h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.homepage .homepage-content .homepage-info h2 > span {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 3em;
+}
+.homepage .homepage-content .homepage-info h3 {
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.homepage .homepage-content .homepage-info a {
+}
+.homepage .homepage-content .homepage-info a.main-btn {
+  display: inline-block;
+  color: var(--white-color);
+  background-color: var(--main-color);
+  border-radius: 15px;
+  padding: 0.9375em 2.1875em;
+  /* Start Slow Then Fast Then Slow  */
+  transition: 0.7s ease;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+.homepage .homepage-content .homepage-info a.main-btn:hover {
+  transform: scale(1.1);
+  background-color: #0a49f6;
+}
+.homepage .homepage-content .homepage-info .social-icons {
+}
+.homepage .homepage-content .homepage-info .social-icons a {
+  color: var(--main-color);
+  /* Inline Elements Does not accept Margin Top And Bottom */
+  display: inline-block;
+  padding-right: 30px;
+}
+
+/* End HomePage  */
